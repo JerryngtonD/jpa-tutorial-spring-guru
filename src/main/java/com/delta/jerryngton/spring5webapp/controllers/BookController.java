@@ -17,7 +17,6 @@ public class BookController {
     public String getBooks(Model model) {
         model.addAttribute("books", bookRepository.findAll());
 
-        //just for mock
-        return "books-view";
+        return "books";
     }
 }
